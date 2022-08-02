@@ -1,0 +1,67 @@
+<!-- Section: Design Block -->
+<section class="text-center">
+  <!-- Background image -->
+  <div class="p-5 bg-image" style="
+        background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');
+        height: 300px;
+        "></div>
+  <!-- Background image -->
+
+  <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+        margin-top: -100px;
+        background: hsla(0, 0%, 100%, 0.8);
+        backdrop-filter: blur(30px);
+        ">
+    <div class="card-body py-5 px-md-5">
+      <div>
+        <a class="btn btn-primary" routerLink="/add-edit-comment/:1">Add/Edit Comment</a>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <table class="table">
+            <thead class="txt-color">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">content</th>
+                <th scope="col">Comment</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody style="color: #3a4d8b;">
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>testing.</td>
+                <td><a style="text-decoration: none;" routerLink="/add-edit-comment/:1">Edit</a></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>testing.</td>
+                <td><a style="text-decoration: none;" routerLink="/add-edit-comment/:2">Edit</a></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>A</td>
+                <td>B</td>
+                <td>@C</td>
+                <td>testing.</td>
+                <td><a style="text-decoration: none;" routerLink="/add-edit-comment/:3">Edit</a></td>
+              </tr>
+            </tbody>
+        </table>
+        <div>
+          <a class="btn btn-primary" routerLink="/post">Go to post</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section: Design Block -->

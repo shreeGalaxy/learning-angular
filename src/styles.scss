@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.bg-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.txt-color {
+    color: #1b285f !important;
+}
