@@ -12,6 +12,7 @@ import { ContactComponent } from './public/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: SigninComponent },
+  { path: 'learning-angular', component: SigninComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'about', component: AboutUsComponent },
