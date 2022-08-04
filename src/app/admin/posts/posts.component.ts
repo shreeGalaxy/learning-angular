@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
+  addEditPost() {
+    this.router.navigate(['/add-edit-post']);
+  }
 }

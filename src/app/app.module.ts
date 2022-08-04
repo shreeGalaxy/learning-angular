@@ -7,9 +7,6 @@ import { HeaderComponent } from './public/header/header.component';
 import { FooterComponent } from './public/footer/footer.component';
 import { AboutUsComponent } from './public/about-us/about-us.component';
 import { ContactComponent } from './public/contact/contact.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-// import { AdminModule } from './admin/admin.module';
-// import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -21,12 +18,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule,
-    // AdminModule,
-    // AuthModule
+    AppRoutingModule
   ],
-  providers: [],
+  exports: [AppRoutingModule],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -5,7 +5,6 @@ import { PostsComponent } from './posts/posts.component';
 import { CommentsComponent } from './comments/comments.component';
 import { RouterModule } from '@angular/router';
 import { CreatEditPostComponent } from './creat-edit-post/creat-edit-post.component';
-import { AppModule } from '../app.module';
 import { CreatEditCommentComponent } from './creat-edit-comment/creat-edit-comment.component';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { CreatEditCommentComponent } from './creat-edit-comment/creat-edit-comme
   imports: [
     CommonModule,
     RouterModule,
-    AppModule
   ],
 })
 export class AdminModule { }
