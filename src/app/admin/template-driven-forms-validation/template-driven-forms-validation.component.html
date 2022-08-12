@@ -1,0 +1,46 @@
+<!-- Section: Design Block -->
+<section class="text-center">
+    <!-- Background image -->
+    <div class="p-5 bg-image" style="
+          background-image: url('/assets/images/171.jpg');
+          height: 300px;
+          "></div>
+    <!-- Background image -->
+  
+    <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+          margin-top: -100px;
+          background: hsla(0, 0%, 100%, 0.8);
+          backdrop-filter: blur(30px);
+          ">
+      <div class="card-body">
+  
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-5">Post</h2>
+                <form #postForm="ngForm" (ngSubmit)="onSubmit(postForm.value)">
+                    <div class="form-outline mb-2">
+                        <label class="form-label txt-color" for="form3Example3">Title</label>
+                        <input type="text" id="form3Example3" name="title" class="form-control ng-valid" required/>
+                    </div>
+                    <div class="form-outline mb-2">
+                        <label class="form-label txt-color" for="form3Example4">Author</label>
+                        <input type="text" id="form3Example4" name="author" class="form-control ng-valid" required />
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label txt-color" for="form3Example4">Content</label>
+                        <textarea id="form3Example4" name="content" class="form-control ng-valid" required></textarea>
+                    </div>
+                    <!-- Submit button -->
+                    <div>
+                        <button  type="button" [disabled]="!postForm.valid" class="btn btn-primary btn-block mb-2 center">
+                        Add/Edit Post
+                        </button>
+                    </div>
+                    <a class="btn btn-secondary btn-block mb-2 center" routerLink="/post">Go to post</a>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->

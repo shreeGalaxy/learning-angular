@@ -16,6 +16,12 @@
         <div class="row d-flex justify-content-center">
           <div class="col-lg-8">
             <h1 class="fw-bold mb-5 txt-color">Welcome to Dashboard</h1>
+            <div>
+              <h2>Date Pipe</h2>
+              <p>Today is {{today | date}}</p>
+              <p>Or if you prefer, {{today | date:'fullDate'}}</p>
+              <p>The time is {{today | date:'h:mm a z'}}</p>
+            </div>
           </div>
           <div class="col-lg-4">
               <a routerLink="/post" class="btn btn-primary">Post</a>

@@ -7,6 +7,8 @@ import { HeaderComponent } from './public/header/header.component';
 import { FooterComponent } from './public/footer/footer.component';
 import { AboutUsComponent } from './public/about-us/about-us.component';
 import { ContactComponent } from './public/contact/contact.component';
+import { PostService } from './post.service';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,11 @@ import { ContactComponent } from './public/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AdminModule
   ],
   exports: [AppRoutingModule],
   bootstrap: [AppComponent],
+  providers: [PostService]
 })
 export class AppModule { }

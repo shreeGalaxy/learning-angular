@@ -1,0 +1,63 @@
+<!-- Section: Design Block -->
+<section class="text-center">
+    <!-- Background image -->
+    <div class="p-5 bg-image" style="
+          background-image: url('/assets/images/171.jpg');
+          height: 300px;
+          "></div>
+    <!-- Background image -->
+  
+    <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+          margin-top: -100px;
+          background: hsla(0, 0%, 100%, 0.8);
+          backdrop-filter: blur(30px);
+          ">
+      <div class="card-body">
+  
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold mb-5">Post</h2>
+            <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+              <div class="form-outline mb-2">
+                <label class="form-label txt-color" for="form3Example3">Title</label>
+                <input type="text" id="form3Example3" formControlName="title" class="form-control" />
+                <div class="text-danger"
+                  *ngIf="!profileForm.controls.title?.valid && (profileForm.controls.title?.dirty
+                  ||profileForm.controls.title?.touched)">
+                    Title is required.
+                </div>
+              </div>
+  
+              <div class="form-outline mb-2">
+                <label class="form-label txt-color" for="form3Example4">Author</label>
+                <input type="text" id="form3Example4" formControlName="author" class="form-control" />
+                <div class="text-danger"
+                  *ngIf="!profileForm.controls.author?.valid && (profileForm.controls.author?.dirty
+                  ||profileForm.controls.author?.touched)">
+                    Author is required.
+                </div>
+              </div>
+  
+              <div class="form-outline mb-4">
+                <label class="form-label txt-color" for="form3Example4">Content</label>
+                <textarea id="form3Example4" formControlName="content" class="form-control"></textarea>
+                <div class="text-danger"
+                  *ngIf="!profileForm.controls.content?.valid && (profileForm.controls.content?.dirty
+                  ||profileForm.controls.content?.touched)">
+                    Content is not valid, Please make sure value is not empty or min 6 character or maximum 50 character
+                </div>
+              </div>
+              <p>Form Status: {{ profileForm.errors }}</p>
+              <div>
+                <button type="submit" [disabled]="!profileForm.valid" class="btn btn-primary btn-block mb-2 center">
+                  Add/Edit Post
+                </button>
+              </div>
+              <a class="btn btn-secondary btn-block mb-2 center" routerLink="/post">Go to post</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
